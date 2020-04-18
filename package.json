@@ -1,0 +1,15 @@
+{
+  "name": "story.alieveo",
+  "version": "1.0.0",
+  "description": "Story Alieveo",
+  "main": "app.js",
+  "scripts": {
+    "up": "node app.js"
+  },
+  "author": "Emil Aliev <aliev.e.o@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "config": "^3.3.1"
+  }
+}

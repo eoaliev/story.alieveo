@@ -11,7 +11,9 @@
     "convert_articles_content_worker": "node workers/convert_articles_content_worker.js",
     "remove_removed_articles_worker": "node workers/remove_removed_articles_worker.js",
     "clear_articles_worker": "node workers/clear_articles_worker.js",
-    "clear_articles": "npm run clear_articles_worker && npm run fetch_modified_article && npm run download_articles_worker && npm run convert_articles_content_worker"
+    "clear_articles": "npm run clear_articles_worker && npm run fetch_modified_article && npm run download_articles_worker && npm run convert_articles_content_worker",
+    "client_watch": "npm run start --prefix client",
+    "dev": "concurrently \"npm run watch\" \"npm run client_watch\""
   },
   "author": "Emil Aliev <aliev.e.o@gmail.com>",
   "license": "ISC",
@@ -25,6 +27,7 @@
     "redis": "^3.0.2"
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nodemon": "^2.0.3"
   }
 }

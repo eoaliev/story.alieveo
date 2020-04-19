@@ -6,7 +6,8 @@
   "scripts": {
     "up": "node app.js",
     "fetch_modified_article": "node workers/fetch_modified_article_worker.js",
-    "download_articles_worker": "node workers/download_articles_worker.js"
+    "download_articles_worker": "node workers/download_articles_worker.js",
+    "convert_articles_content_worker": "node workers/convert_articles_content_worker.js"
   },
   "author": "Emil Aliev <aliev.e.o@gmail.com>",
   "license": "ISC",
@@ -14,6 +15,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "config": "^3.3.1",
+    "mammoth": "^1.4.9",
     "md5": "^2.2.1",
     "redis": "^3.0.2"
   }

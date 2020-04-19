@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "up": "node app.js",
-    "fetch_modified_article": "node workers/fetch_modified_article_worker.js"
+    "fetch_modified_article": "node workers/fetch_modified_article_worker.js",
+    "download_articles_worker": "node workers/download_articles_worker.js"
   },
   "author": "Emil Aliev <aliev.e.o@gmail.com>",
   "license": "ISC",

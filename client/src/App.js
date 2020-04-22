@@ -1,6 +1,10 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom'
+import {useRoutes} from "./routes";
 
 function App() {
+  const routes = useRoutes();
+
   return (
     <div className="app-container">
       <nav>
@@ -11,7 +15,9 @@ function App() {
         </div>
       </nav>
       <main className="container">
-        <h1>Client</h1>
+        <BrowserRouter>
+          {routes}
+        </BrowserRouter>
       </main>
       <footer className="page-footer">
         <div className="footer-copyright">

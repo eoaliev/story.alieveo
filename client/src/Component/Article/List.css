@@ -1,0 +1,5 @@
+.article-list {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 0.75rem;
+}
